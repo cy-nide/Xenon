@@ -33,41 +33,48 @@ namespace Logon_Screen_Updater
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            #region Get Images
-            int resultCount = 0;
-            if (string.IsNullOrEmpty(txtSearchString.Text.TrimEnd()))
+            try
             {
-                MessageBox.Show("Please enter a search criteria", "Error",
-                         MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                #region Get Images
+                int resultCount = 0;
+                if (string.IsNullOrEmpty(txtSearchString.Text.TrimEnd()))
+                {
+                    MessageBox.Show("Please enter a search criteria", "Error",
+                             MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                if (txtResultCount.Text == null || txtResultCount.Text.Trim().Length == 0 || txtResultCount.Text.Trim() == "")
+                {
+                    resultCount = 100;
+                }
+                else
+                    resultCount = Convert.ToInt32(txtResultCount.Text);
+                String screenSize = Screen.PrimaryScreen.Bounds.Width.ToString() + "x" + Screen.PrimaryScreen.Bounds.Height.ToString();
+                GimageSearchClient client = new GimageSearchClient("www.google.com");
+                IList<IImageResult> results = client.Search(txtSearchString.Text.TrimEnd(), resultCount, "", screenSize, "colorized", "jpg", "jpg", "www.google.com");
+                wrapPanel1.Controls.Clear();
+                wrapPanel1.resetLocation();
+                foreach (IImageResult image in results)
+                {
+                    try
+                    {
+                        wrapPanel1.Add(image.Url, 170, 140);
+                    }
+                    catch (WebException)
+                    {
+                        continue;
+                    }
+                    catch (ArgumentException)
+                    {
+                        continue;
+                    }
+                }
+                #endregion
             }
-            if (txtResultCount.Text == null || txtResultCount.Text.Trim().Length == 0 || txtResultCount.Text.Trim() == "")
+            catch(WebException)
             {
-                resultCount = 100;
+                MessageBox.Show("An internet connection is required to use this feature, Please verify your connection and try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
-                resultCount = Convert.ToInt32(txtResultCount.Text);
-            String screenSize = Screen.PrimaryScreen.Bounds.Width.ToString() + "x" + Screen.PrimaryScreen.Bounds.Height.ToString();
-            GimageSearchClient client = new GimageSearchClient("www.google.com");
-            IList<IImageResult> results = client.Search(txtSearchString.Text.TrimEnd(), resultCount, "", screenSize, "colorized", "jpg", "jpg", "www.google.com");
-            wrapPanel1.Controls.Clear();
-            wrapPanel1.resetLocation();
-            foreach (IImageResult image in results)
-            {
-                try
-                {
-                    wrapPanel1.Add(image.Url, 170, 140);
-                }
-                catch (WebException)
-                {
-                    continue;
-                }
-                catch (ArgumentException)
-                {
-                    continue;
-                }
-            }
-            #endregion
         }
 
     }

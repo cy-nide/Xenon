@@ -36,11 +36,13 @@
             // txtPassword
             // 
             this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPassword.ForeColor = System.Drawing.Color.DarkGray;
             this.txtPassword.Location = new System.Drawing.Point(12, 184);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.ReadOnly = true;
             this.txtPassword.Size = new System.Drawing.Size(258, 25);
             this.txtPassword.TabIndex = 0;
+            this.txtPassword.Text = "Password";
             this.txtPassword.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyUp);
             // 
             // lblUserName
