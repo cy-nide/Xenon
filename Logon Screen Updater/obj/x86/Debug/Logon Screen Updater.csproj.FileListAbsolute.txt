@@ -1,0 +1,12 @@
+c:\homefolders\shalom.malitjane\my documents\visual studio 2010\Projects\Logon Screen Updater\Logon Screen Updater\bin\Debug\Logon Screen Updater.exe.config
+c:\homefolders\shalom.malitjane\my documents\visual studio 2010\Projects\Logon Screen Updater\Logon Screen Updater\bin\Debug\Logon Screen Updater.pdb
+c:\homefolders\shalom.malitjane\my documents\visual studio 2010\Projects\Logon Screen Updater\Logon Screen Updater\obj\x86\Debug\Logon Screen Updater.csprojResolveAssemblyReference.cache
+c:\homefolders\shalom.malitjane\my documents\visual studio 2010\Projects\Logon Screen Updater\Logon Screen Updater\obj\x86\Debug\Logon_Screen_Updater.AboutBox.resources
+c:\homefolders\shalom.malitjane\my documents\visual studio 2010\Projects\Logon Screen Updater\Logon Screen Updater\obj\x86\Debug\Logon_Screen_Updater.MainForm.resources
+c:\homefolders\shalom.malitjane\my documents\visual studio 2010\Projects\Logon Screen Updater\Logon Screen Updater\obj\x86\Debug\Logon_Screen_Updater.OnlineSearchForm.resources
+c:\homefolders\shalom.malitjane\my documents\visual studio 2010\Projects\Logon Screen Updater\Logon Screen Updater\obj\x86\Debug\Logon_Screen_Updater.PreviewForm.resources
+c:\homefolders\shalom.malitjane\my documents\visual studio 2010\Projects\Logon Screen Updater\Logon Screen Updater\obj\x86\Debug\Logon_Screen_Updater.Properties.Resources.resources
+c:\homefolders\shalom.malitjane\my documents\visual studio 2010\Projects\Logon Screen Updater\Logon Screen Updater\obj\x86\Debug\Logon_Screen_Updater.WrapPanel.resources
+c:\homefolders\shalom.malitjane\my documents\visual studio 2010\Projects\Logon Screen Updater\Logon Screen Updater\obj\x86\Debug\Logon Screen Updater.csproj.GenerateResource.Cache
+c:\homefolders\shalom.malitjane\my documents\visual studio 2010\Projects\Logon Screen Updater\Logon Screen Updater\obj\x86\Debug\Logon Screen Updater.exe
+c:\homefolders\shalom.malitjane\my documents\visual studio 2010\Projects\Logon Screen Updater\Logon Screen Updater\obj\x86\Debug\Logon Screen Updater.pdb
